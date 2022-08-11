@@ -17,4 +17,5 @@ client = Mysql2::Client.new(:host =>"127.0.0.1",
                         :password => "luiz",
                         :database => "class")
 
-puts cleaning(client).to_a
+cleaning(client)
+client.close
